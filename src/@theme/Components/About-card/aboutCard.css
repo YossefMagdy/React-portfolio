@@ -1,0 +1,12 @@
+.about-card{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 56px -8px #0000002b;
+    padding: 1em;
+
+}
+
+.purplecolor{
+    color: #a84cb8;
+    border-bottom: 2px solid #a84cb8;
+}

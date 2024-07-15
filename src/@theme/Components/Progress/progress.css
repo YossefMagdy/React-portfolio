@@ -1,0 +1,26 @@
+.skill-progress{
+    width: 100%;
+    height: 5px ;
+    background-color:var(--grayish-blue);
+    border-radius: 2.5px;
+}
+.progresS-bar{
+    position: relative;
+    height: 5px ;
+    border-radius: 2.5px;
+}
+.progresS-bar .dot{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.progress-text{
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    top: -25px;
+}

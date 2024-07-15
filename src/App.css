@@ -1,0 +1,12 @@
+@import './css variables/variables.css';
+
+.main-container{
+    width: 70%;
+}
+
+@media (max-width:800px){
+    .main-container{
+        width: 100%;
+        padding: 50px;
+    }
+}

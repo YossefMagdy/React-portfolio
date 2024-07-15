@@ -1,0 +1,22 @@
+.work-image-container{
+    width: 100%;
+    height: 350px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.inner-content{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    background-color: rgba(0, 0, 255, 0.37);
+    transition: 1s;
+}
+
+.work-image-container:hover .inner-content{
+    opacity: 1;
+}
+

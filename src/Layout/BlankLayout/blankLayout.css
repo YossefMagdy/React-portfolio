@@ -1,0 +1,36 @@
+main{
+    display: flex;
+    position: relative;
+}
+.sideMenu{
+    width: 270px;
+}
+.content{
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+
+.sideMenu-button{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: #000000b3;
+    z-index: 9999;
+    display: none;
+    outline: none;
+}
+@media (max-width:992px) {
+    .sideMenu{
+        width: 0;
+    }
+    .sideMenu-button{
+        display: block;
+    }
+        .content{
+            width: 100%;
+        }
+}
