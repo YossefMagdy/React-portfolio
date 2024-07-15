@@ -13,7 +13,6 @@ export default function SideMenu() {
     sideMenu.style.padding=0
   }
   function handleResize(){
-    console.log('enter')
     const sideMenu=document.getElementById('sideMenu')
     if(window.innerWidth>992){
       sideMenu.style.width='270px'
@@ -37,11 +36,11 @@ export default function SideMenu() {
                 </div>
 
                 <ul className='menu-item list-unstyled text-center'>
-                    <li className='py-2'><NavLink className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`}  to='home' >Home</NavLink> </li>
-                    <li className='py-2'><NavLink className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`}  to='about'>About</NavLink></li>
-                    <li className='py-2'><NavLink className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='skills'>Skills</NavLink></li>
-                    <li className='py-2'><NavLink className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='experience'>EXPERIENCE</NavLink></li>
-                    <li className='py-2'><NavLink className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='work'>WORK</NavLink></li>
+                    <li className='py-2'><NavLink onClick={handleResize} className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`}  to='home' >Home</NavLink> </li>
+                    <li className='py-2'><NavLink onClick={handleResize} className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`}  to='about'>About</NavLink></li>
+                    <li className='py-2'><NavLink onClick={handleResize} className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='skills'>Skills</NavLink></li>
+                    <li className='py-2'><NavLink onClick={handleResize} className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='experience'>EXPERIENCE</NavLink></li>
+                    <li className='py-2'><NavLink onClick={handleResize} className={`nav-link ${(navData) => (navData.isActive ? "active" : 'none')}`} to='work'>WORK</NavLink></li>
                 </ul>
 
                 <button className='border-0 close-sideMenu' onClick={handleSideMenu}><i className="fa-solid fa-xmark"></i></button>
