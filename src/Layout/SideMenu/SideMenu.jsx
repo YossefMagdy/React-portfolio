@@ -5,7 +5,7 @@ import {  NavLink  } from 'react-router-dom'
 
 
 export default function SideMenu() {
-
+  
   function handleSideMenu(){
     const sideMenu=document.getElementById('sideMenu')
     sideMenu.style.width=0
@@ -16,6 +16,9 @@ export default function SideMenu() {
     if(window.innerWidth>992){
       sideMenu.style.width='270px'
       sideMenu.style.padding='20px'
+    }else{
+      sideMenu.style.width=0
+      sideMenu.style.padding=0
     }
   }
   window.addEventListener('resize', handleResize)
