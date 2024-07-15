@@ -70,7 +70,8 @@ aside{
 
 @media (max-width:992px){
     aside{
-        width: 270px;
+        width: 0;
+        padding: 0;
         z-index: 99999999999999;
     }
     .close-sideMenu{

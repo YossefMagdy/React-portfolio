@@ -6,12 +6,14 @@ import {  NavLink  } from 'react-router-dom'
 
 export default function SideMenu() {
   
+
   function handleSideMenu(){
     const sideMenu=document.getElementById('sideMenu')
     sideMenu.style.width=0
     sideMenu.style.padding=0
   }
   function handleResize(){
+    console.log('enter')
     const sideMenu=document.getElementById('sideMenu')
     if(window.innerWidth>992){
       sideMenu.style.width='270px'
@@ -22,7 +24,7 @@ export default function SideMenu() {
     }
   }
   window.addEventListener('resize', handleResize)
-
+  
   return (
     <aside id="sideMenu" className='pt-5'>
                 <div className="image-container">
